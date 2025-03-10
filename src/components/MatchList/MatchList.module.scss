@@ -1,0 +1,8 @@
+@use '../../styles/colors';
+
+.matchList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 87px;
+}

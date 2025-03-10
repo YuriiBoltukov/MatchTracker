@@ -1,0 +1,52 @@
+@use '../../styles/colors';
+
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: colors.$item-primary;
+  padding: 16px 36px;
+  font-weight: 600;
+  font-size: 16px;
+  box-sizing: border-box;
+  &_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_team {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      svg {
+        width: 48px;
+        height: 48px;
+      }
+    }
+    &_result {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 20px;
+      span {
+        margin-bottom: 4px;
+      }
+    }
+    &_right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  &_arrow {
+    display: flex;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    svg {
+      margin: 0 auto;
+    }
+  }
+}

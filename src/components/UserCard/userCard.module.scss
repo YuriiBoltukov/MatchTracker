@@ -1,0 +1,31 @@
+@use '../../styles/colors';
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  background-color: colors.$item-secondary;
+  padding: 8px 12px;
+  border-radius: 4px;
+  align-items: center;
+  &_player {
+    display: flex;
+    align-items: center;
+    &_avatar {
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+      background-image: url('../../assets/avatar.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      margin-right: 4px;
+    }
+  }
+  p > span {
+    font-size: 12px;
+    color: colors.$text1;
+    font-weight: 400;
+    font-family: Inter, Roboto, sans-serif;
+  }
+}

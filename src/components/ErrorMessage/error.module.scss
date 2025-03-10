@@ -1,0 +1,20 @@
+@use '../../styles/colors';
+
+.error {
+  background-color: colors.$error-bg;
+  color: colors.$text;
+  padding: 16px 24px;
+  max-height: 56px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Inter, Roboto, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &_icon {
+    display: flex;
+    width: 28px;
+    height: 28px;
+  }
+}

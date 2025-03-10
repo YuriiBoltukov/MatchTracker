@@ -1,0 +1,56 @@
+@use '../../styles/colors';
+
+.card {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 286px));
+  grid-template-rows: auto;
+  grid-gap: 8px;
+  &_players {
+    display: flex;
+    justify-content: space-between;
+    color: colors.$text1;
+    gap: 8px;
+  }
+
+  &_team {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-around;
+    background-color: colors.$item-secondary;
+    padding: 14px 24px;
+    align-items: center;
+    &_points {
+      font-family: Inter, Roboto, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: colors.$text-other;
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        color: colors.$text1;
+      }
+    }
+  }
+}
+
+@media (max-width: 1780px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 8px;
+  }
+}
+
+@media (max-width: 1192px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 8px;
+    &_team {
+      flex-direction: column;
+    }
+  }
+}

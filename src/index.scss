@@ -1,0 +1,30 @@
+@use 'normalize.css';
+@use 'styles/colors';
+
+:root {
+  font-family: Inter, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 16px;
+  color: colors.$text;
+}
+
+#root {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  background-color: colors.$primary-color;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
